@@ -1,0 +1,235 @@
+main, header, section, aside, footer {
+    margin: 0;
+    padding: 20px;
+    border: 2px solid #000000;
+    color: black;
+}
+
+main {
+    background: blue;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+    border: 2px solid black;
+    padding: 20px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#hamburger {
+    display: none;
+
+}
+
+header {
+    background: purple;
+    font-size: 30px;
+    text-align: center;
+    color: gold;
+}
+
+p:nth-child(2) {
+    background: white;
+
+}
+
+p:nth-child(3) {
+    background: green;
+    font-family: Arial;
+}
+
+p:nth-child(4) {
+    background: purple;
+    color: white;
+}
+
+
+
+.begin {
+    background: springgreen;
+    text-align: center;
+}
+
+.content {
+    background: violet;
+    text-align: center;
+}
+
+.sidebar {
+    background: darkorange;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-size: 30px;
+    text-align: center;
+    }
+
+footer {
+    background: darkgoldenrod;
+
+}
+
+
+.content {
+    flex: 1;
+
+
+}
+
+.sidebar {
+    flex: 0 1 600px;
+   
+}
+
+.logo, .logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8, .logo9, .logo10, .logo11, .logo12 {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    box-sizing: border-box;
+    max-width: 400px;
+    
+    max-height: 300px;
+}
+
+.logo13 {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    max-width: 400px;
+    max-height: 300px;
+    
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  
+  
+}
+
+/* Position the next and prev arrows to the left and right of the carousel */
+.next {
+  right: 30px;
+  border-radius: 3px 0 0 3px;
+  position: absolute;
+}
+
+
+.prev {
+    left: 10px;
+    position: absolute;
+}
+
+
+
+/* Caption text */
+.text {
+  color:white;
+  font-size: 20px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+label, input {
+    
+    padding-left: 100px;
+
+}
+
+
+.main-footer {
+    text-align: center;
+    font-family: Arial;
+}
+
+input {
+    padding: 5px;
+
+
+}
+
+
+
+/* Used Media Queries to ensure my flex container will be responsive based on screen size when it is less than 800 pixels */
+
+@media (min-width: 800px) {
+    #flex-container {
+        display: flex;
+    }
+
+}
+
+/* Use of media query so my navigation bar will automatically collapse into a hamburger style nav bar when the screen is 550 px or less */
+
+@media(max-width: 550px){
+    a{
+        display: none;
+        text-decoration: none;
+    }
+
+    .prev, .next {
+        display: flex;
+        position: absolute;
+    }
+
+    nav {
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+
+    #hamburger {
+        display: flex;
+
+    }
+
+    .visible-nav-item {
+        display: inherit;
+
+    }
+
+    #container {
+        width: 50%;
+
+    }
+
+   
+
+
+}
