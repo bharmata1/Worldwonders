@@ -1,3 +1,5 @@
+
+/* set the main,header, section, and aside elements to have a border of 2px black, a margin of 0, and a padding of 20px to space the areas away from the side margins.  */
 main, header, section, aside, footer {
     margin: 0;
     padding: 20px;
@@ -5,10 +7,14 @@ main, header, section, aside, footer {
     color: black;
 }
 
+/* Gives the main element a background of blue */
+
 main {
     background: blue;
 
 }
+
+/* gives the nav bar a red background, space between each nav bar item, border of 2px black, and padding of 20px to allow space between the element and the side margins */
 
 nav {
     display: flex;
@@ -19,15 +25,20 @@ nav {
     
 }
 
+/* Gives the anchor tags (nav bar) no underlines and black text */
 a {
     text-decoration: none;
     color: black;
 }
 
+/* Gives the collapsable menu icon a display of none */
+
 #hamburger {
     display: none;
 
 }
+
+/* Gives the header element a background of purple, text color of gold, aligns the header to the center, and gives the font size 30px */
 
 header {
     background: purple;
@@ -36,42 +47,57 @@ header {
     color: gold;
 }
 
+/* Targets the first paragraph in the sections and aside elements and gives it a background of white and a padding of 5px */
 p:nth-child(2) {
     background: white;
-
+    padding: 5px;
+    
 }
+/* Targets the second paragraph in the sections and aside elements and gives it a background of green and a padding of 5px, and a font of arial */
 
 p:nth-child(3) {
     background: green;
     font-family: Arial;
+    padding: 5px;
 }
+
+/* Targets the third paragraph in the sections and aside elements and gives it a background of purple and a padding of 5px and a text color of white */
 
 p:nth-child(4) {
     background: purple;
     color: white;
+    padding: 5px;
 }
 
-
+/* Target the begin class giving it a background of springgreen and aligns the text to the center */
 
 .begin {
     background: springgreen;
     text-align: center;
 }
 
+/* Target the content class giving it a background of violet and aligns the text to the center */
+
 .content {
     background: violet;
     text-align: center;
 }
+
+/* Target the sidebar class giving it a background of darkorange and aligns the text to the center  */
 
 .sidebar {
     background: darkorange;
     text-align: center;
 }
 
+/* Gives all h1, h2, & h3 elements the same font size and aligns the text in the center */
+
 h1, h2, h3 {
     font-size: 30px;
     text-align: center;
     }
+
+/* Gives the footer a background of dark golden rod */
 
 footer {
     background: darkgoldenrod;
@@ -79,16 +105,7 @@ footer {
 }
 
 
-.content {
-    flex: 1;
-
-
-}
-
-.sidebar {
-    flex: 0 1 600px;
-   
-}
+/* Target the images to give them a border, size, maxwidth, max height */
 
 .logo, .logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8, .logo9, .logo10, .logo11, .logo12 {
     width: 100%;
@@ -158,6 +175,8 @@ footer {
   text-align: center;
 }
 
+/* Targets the slideshow numbers on the top left of the carousel, giving a color of white, font size of 12px, padding, and positioning */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -166,17 +185,21 @@ footer {
   top: 0;
 }
 
+/* Target the label and input elements to give it a padding from the left side of 100px */
+
 label, input {
     
     padding-left: 100px;
 
 }
 
+/* Target the footer to align the text and gives it a font of arial */
 
 .main-footer {
     text-align: center;
     font-family: Arial;
 }
+/* Targets the input element and gives it a padding of 5px */
 
 input {
     padding: 5px;
@@ -186,7 +209,7 @@ input {
 
 
 
-/* Used Media Queries to ensure my flex container will be responsive based on screen size when it is less than 800 pixels */
+/* Used Media Queries to ensure my flex container will be responsive based on screen size*/
 
 @media (min-width: 800px) {
     #flex-container {
@@ -195,9 +218,9 @@ input {
 
 }
 
-/* Use of media query so my navigation bar will automatically collapse into a hamburger style nav bar when the screen is 550 px or less */
+/* Use of media query so my navigation bar will automatically collapse into a hamburger style nav bar when the screen is 500 px or less */
 
-@media(max-width: 550px){
+@media(max-width: 500px){
     a{
         display: none;
         text-decoration: none;
@@ -224,11 +247,10 @@ input {
 
     }
 
-    #container {
-        width: 50%;
+    form {
+        display: inline;
 
     }
-
    
 
 

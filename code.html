@@ -1,6 +1,8 @@
 <!DOCTYPE html>
     <html>
         <head>
+
+            <!-- Links my css to the html and links the nav bar icon -->
             <link rel="stylesheet" href="code.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
            
@@ -11,6 +13,8 @@
     <body>
         <main> 
             <nav>
+
+                <!-- allows the nav bar to be clickable - Nav bar items are linked to certain parts of the webpage -->
                 <i id="hamburger" class="fa fa-bars" onclick="ToggleNavItems();"></i>
                     <a href="#chichenitza">Chichen Itza</a>
                     <a href="#christredeemer">Christ Redeemer</a>
@@ -23,11 +27,14 @@
             </nav>
             <header>The New Seven Wonders of the World</header>
                 <div>
+
+                    <!-- Section with a class of begin to allow CSS to target and style -->
                     <section class="begin">
                         <h1 id="chichenitza">Chichen Itza</h1>
                             <p>Chichen Itza was a large city built by the Mayan civilization in the early 400s A.D.</p>
                             <p>It is located on the Yucatan Peninsula in Mexico and is considered to be one of the most influential cities ever.</p>
                             <p>It is one of the most visited locations in Mexico with several million tourists visiting each year.   </p>
+                            <!-- Links images to webpages with a logo class to allow CSS to style each photo - ids allow the nav bar to go to whichever item is clicked -->
                                 <img class="logo" src="http://3.bp.blogspot.com/-WaaHd1CmsZw/T0h8mxP8CDI/AAAAAAAAF-8/BiSrMwwEePA/s1600/Ancient+Mayan+Ruins,+Chichen+Itza,+Mexico.jpg">
                                 <img class="logo1" src="https://images-resrc.staticlp.com/C=AR1200x630/S=W1200,U/O=85/http://media.lonelyplanet.com/a/g/hi/t/d265ceddec9bb8e69d47cbac928de45e-chichen-itza.jpg">
                         <h2 id="christredeemer">Christ Redeemer</h2>
@@ -42,6 +49,7 @@
                                 <img class="logo5" src="https://www.washingtonpost.com/resizer/OMwSHdXcQBpQF-beX2vFAsM8UAE=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/SEH6E5UGZUI6PFVH2F4M6NJE5M.jpg">
                     </section>
                 </div>
+                <!-- Flex container and section with a class of content to allow CSS to style the content area - ids allow the anv bar to navigate to whichever item is clicked-->
             <div id="flex-container">
                 <section class="content">
                     <h1 id="machupicchu">Machu Picchu</h1>
@@ -57,7 +65,7 @@
                             <img class="logo9" src="https://fthmb.tqn.com/JRbQ8Fpon-gkFxdCpSdP4F9auvs=/2900x1934/filters:fill(auto,1)/GettyImages-133969533-596b51705f9b582c3574ec89.jpg">
                      
             
-                
+                <!-- aside element with a class of sidebar to allow CSS to style the sidebar element -->
                         </section>
                 <aside class="sidebar">
                     <h1 id="tajmahal">Taj Mahal</h1>
@@ -71,9 +79,11 @@
                             <img class="logo12" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1200px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg">
                             <img class="logo13" src="https://www.crystalinks.com/Colosseum_Rome.jpg">
                         </div>
+
+                        <!-- This is my contact page which requires the email to be in a@b.com format - Also shows the name, email, and message field  -->
                         <div id="container">
                             <form class="form-contact">
-                                <h1 id="contact">Contact</h1>
+                                <h1 id="contact">Contact Our Team</h1>
                       
                                 <label for="name">Name:</label> 
                                 <input type="text" id="name">
@@ -142,21 +152,13 @@
   </div>
   <br>
 </aside>
-            
+            <!-- Displays my footer at the bottom of the screen with a class of main footer to allow CSS to style -->
                 <footer class="main-footer">
+                    <!-- My made up copyright -->
                     <span>&copy;New Wonders of the World History</span>
                 </footer>
-
-
-
-
-
-
-
-
         </main>
-
-
+<!-- Links my .js file to the html -->
         <script src="main.js"></script>
     </body>
 </html>
